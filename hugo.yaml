@@ -28,18 +28,18 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
-    # - identifier: blog
-    #   name: Blog
-    #   title: Blog posts
-    #   url: /blogs
-      # weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+# Menus:
+#   main:
+#     # - identifier: blog
+#     #   name: Blog
+#     #   title: Blog posts
+#     #   url: /blogs
+#       # weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -60,7 +60,7 @@ Menus:
 
 params:
   title: "Umme Habiba Islam"
-  description: Text about my cool site
+  description: My personal portfolio
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -135,8 +135,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Umme Habiba Islam."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    subtitle: "I build clean, fast, and functional web apps."
+    content: "A creative developer focused on building clean, scalable, and engaging web applications."
     image: /images/me.jpg
     bottomImage:
       enable: true
@@ -150,12 +150,12 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/ummehabibaislam
+      #   - icon: fab fa-x-twitter
+      #     url: https://example.com
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
@@ -163,9 +163,7 @@ params:
     title: "About Me"
     # image: "/images/me.jpg"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      I'm a Full Stack Developer, with a strong focus on modern web technologies including React, Node.js, Next.js, and PostgreSQL. I enjoy crafting responsive and high-performance applications that provide seamless user experiences. I'm passionate about continuous learning, clean code, and bridging the gap between frontend design and robust backend systems.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -174,8 +172,9 @@ params:
         - "CSS"
         - "JavaScript"
         - "React"
-        - "Node"
-        - "Express"
+        - "Node.js"
+        - "Next.js"
+        - "PostgreSQL"
 
   # Experience
   experience:
@@ -318,52 +317,89 @@ params:
   # projects
   projects:
     enable: true
+    limit: 2
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+      - title: Movie Bazar
+        content: MovieShop is a full-featured e-commerce web application designed for purchasing and managing movies. The platform offers a clean, responsive user interface and a robust backend to deliver a seamless shopping experience for digital movie products.
         image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
         badges:
-          - "Hugo"
-          - "Bootstrap"
+          - "React"
           - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          - "Node"
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+      - title: Library Management
+        content: A full-stack web application designed to manage a simple library system with complete CRUD (Create, Read, Update, Delete) functionality for books. The project integrates both frontend and backend components to enable efficient data management and a smooth user experience.
+        image: /images/projects/profile.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
         badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
+          - "React"
           - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          - "Node"
+
+      - title: Bus Ticket Reservation System
+        content: A web-based application designed to streamline the process of booking and managing bus tickets online. Developed as a part of a Bachelor’s 3rd-year project, the system enables users to search, reserve, and manage bus tickets through an intuitive user interface, while also offering administrative functionalities for trip and seat management.
+        image: /images/projects/profile.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "HTML"
+          - "CSS"
+          - "PhP"
+          - "Javascript"
+    
+      - title: Bus GPS Tracking System
+        content: A web-based application designed to streamline the process of booking and managing bus tickets online. Developed as a part of a Bachelor’s 3rd-year project, the system enables users to search, reserve, and manage bus tickets through an intuitive user interface, while also offering administrative functionalities for trip and seat management.
+        image: /images/projects/profile.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "HTML"
+          - "CSS"
+          - "PhP"
+          - "Javascript"
+    
+
+      # - title: Image Converter
+      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #   image: /images/projects/converter.jpg
+      #   featured:
+      #     name: Demo
+      #     link: https://django-converter.herokuapp.com
+      #   badges:
+      #     - "Django"
+      #     - "Bootstrap"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/converter
+
+      # - title: Hugo Profile V2
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile2.jpg
+      #   featured:
+      #     name: Demo V2
+      #     link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "Hugo"
+      #     - "Bootstrap"
+      #     - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
